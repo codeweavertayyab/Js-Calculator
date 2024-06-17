@@ -36,7 +36,7 @@ document.querySelectorAll(".operator-btn").forEach((button) => {
     operator = button.value;
     previousNumber = currentNumber;
     currentNumber = "";
-    updateDisaply("");
+    
   });
 });
 
