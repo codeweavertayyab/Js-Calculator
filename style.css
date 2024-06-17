@@ -111,15 +111,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
   }
-  .center h1{
-    text-transform: uppercase;
-    color: white;
-    font-size: 30px;
-  
-}
-.center h3{
-    color: white;
-    font-weight: normal;
-    font-size: 10px;
-}
+  .center{
+    display: none;
+  }
 }
