@@ -18,6 +18,19 @@ let resetBtnStyle = () => {
     button.style.color = "";
   });
 };
+document.querySelector(".togglesign").addEventListener("click", () => {
+  if (currentNumber !== "") {
+    currentNumber = (parseFloat(currentNumber) * -1).toString();
+    updateDisplay(currentNumber);
+  }
+});
+
+document.querySelector(".per").addEventListener("click", () => {
+  if (currentNumber !== "") {
+    currentNumber = (parseFloat(currentNumber) / 100).toString();
+    updateDisplay(currentNumber);
+  }
+});
 document.querySelectorAll(".num-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     currentNumber += btn.value;
